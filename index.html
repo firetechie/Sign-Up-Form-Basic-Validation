@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="registration_form">
+        <div class="title">Registration Form</div>
+        <p id="sub">Please fill in this form to create an account.</p>
+        <br />
+        <form name="form">
+          <div class="form_wrap">
+            <div class="input_grp">
+              <div class="input_wrap1">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="first name" />
+              </div>
+              <div class="input_wrap2">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="last name" />
+              </div>
+            </div>
+
+            <div class="input_grp">
+              <div class="input_wrap1">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  class="check"
+                  name="email"
+                  placeholder="email"
+                />
+                <p>Email must be a valid address!</p>
+              </div>
+              <div class="input_wrap2">
+                <label for="pwd" id="pwd">Password</label>
+                <input
+                  type="password"
+                  id="pwd"
+                  class="check"
+                  name="password"
+                  placeholder="password"
+                />
+                <p id="pwd">Password must be minium 8 character long!</p>
+              </div>
+            </div>
+          </div>
+        </form>
+        <br />
+        <button type="submit" id="login" value="Submit">Submit</button>
+        <p id="sub">
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
